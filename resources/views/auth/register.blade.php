@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Register Page</title>
     <link rel="stylesheet" href="css/login_style.css">
 
     <!-- Boostrap -->
@@ -23,11 +23,16 @@
                 <img src="image/login_image.png" class="img-fluid" style="width: 100%;">
             </div>
             <div class="col-lg-6 col-md-6 regis px-5 py-4">
-                <div class="container rounded flex-column kartu p-5">
-                    <p class="text-left judul-form">Login</p>
+                <div class="container rounded flex-column kartu py-5 px-5">
+                    <p class="text-left judul-form">Create Account</p>
 
-                    <form action="{{ route('post.login') }}" method="post">
+                    <form action="{{ route('post.register') }}" method="post">
                         @csrf
+                        <div class="form-group mb-3">
+                            <label for="">Username</label> <br>
+                            <input type="text" name="name" class="col-lg-10 rounded inp">
+                            @error('name') <div class="text-danger">{{$message}}</div>@enderror
+                        </div>
                         <div class="form-group mb-3">
                             <label for="">Email</label> <br>
                             <input type="email" name="email" class="col-lg-10 rounded inp">
@@ -37,19 +42,19 @@
                             <label for="">Password</label><br>
                             <div class="pass">
                                 <div class="input-group">
-                                    <input type="password" name="password" class="col-lg-4 rounded-left inp">
+                                    <input type="password" name="pass" class="col-lg-4 rounded-left inp">
                                     <span class="input-group-append">
                                         <button class="btn hide" type="button">
-                                        <i class="fas fa-eye-slash"></i>
+                                            <i class="fas fa-eye-slash"></i>
                                         </button>
                                     </span>
                                 </div>
-                                @error('password') <div class="text-danger">{{$message}}</div>@enderror
+                                @error('pass') <div class="text-danger">{{$message}}</div>@enderror
                             </div>
                         </div>
                         <div class="mid d-flex flex-column align-items-center justify-content-center mt-5" style="width: 100%;">
-                            <button class="col-md-6 btn btn-primary mb-2">Login</button>
-                            <p class="text-center mb-2 txt">Don't have an account?<a href="{{ route('post.register') }}">Register</a></p>
+                            <button class="col-md-6 btn btn-primary mb-2">Create Account</button>
+                            <p class="text-center mb-2 txt">Already have an account?<a href="{{ route('post.login') }}">Login</a></p>
                             <p class="text-center txt">Or Continue With</p>
                             <div class="text-center">
                                 <div class="logoGroup">

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +19,11 @@ use App\Http\Controllers\AuthController;
 //     return view('welcome');
 // });
 
-Route::get('/login', [AuthController::class, 'index'])->name('login');
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::post('/post/login', [AuthController::class, 'postlogin'])->name('post.login');
+Route::get('/register', [AuthController::class, 'register'])->name('register');
+Route::post('/post/register', [AuthController::class, 'postregister'])->name('post.register');
 
-Route::get('/home', function () {
-    return view('home');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/home', [UserController::class, 'index'])->name('home');
 });

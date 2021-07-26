@@ -24,6 +24,6 @@ Route::post('/post/login', [AuthController::class, 'postlogin'])->name('post.log
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/post/register', [AuthController::class, 'postregister'])->name('post.register');
 
-Route::group(['middleware' => 'auth'], function () {
+Route::middleware(['web', 'auth'])->group(function () {
     Route::get('/home', [UserController::class, 'index'])->name('home');
 });

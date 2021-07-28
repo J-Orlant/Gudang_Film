@@ -49,7 +49,7 @@
                         </div>
                         <div class="mid d-flex flex-column align-items-center justify-content-center mt-5" style="width: 100%;">
                             <button class="col-md-6 btn btn-primary mb-2">Login</button>
-                            <p class="text-center mb-2 txt">Don't have an account?<a href="{{ route('post.register') }}">Register</a></p>
+                            <p class="text-center mb-2 txt">Don't have an account?<a href="{{ route('register') }}">Register</a></p>
                             <p class="text-center txt">Or Continue With</p>
                             <div class="text-center">
                                 <div class="logoGroup">

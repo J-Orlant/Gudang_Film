@@ -25,5 +25,5 @@ Route::get('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/post/register', [AuthController::class, 'postregister'])->name('post.register');
 
 Route::middleware(['web', 'auth'])->group(function () {
-    Route::get('/home', [UserController::class, 'index'])->name('home');
+    Route::get('/', [UserController::class, 'index'])->name('home');
 });

@@ -826,10 +826,10 @@
         </div>
     </div>
 
-    <div class="col-lg-12 mt-5" style="height: 20%; background: #1D1C2A;">
-
+    <div class="col-lg-12 mt-5 d-flex flex-column justify-content-center align-items-center" style="height: 20%; background: #1D1C2A;">
+        <p class="text-light">&copy; Copyright Weebs. All Rights Reserved</p>
+        <p class="text-light">Design by Aldrian</p>
     </div>
-
 
 
 

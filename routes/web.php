@@ -24,6 +24,14 @@ Route::post('/post/login', [AuthController::class, 'postlogin'])->name('post.log
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/post/register', [AuthController::class, 'postregister'])->name('post.register');
 
+Route::get('/detailFilm', function () {
+    return view('detailfilm/detailFilm');
+})->name('detailFilm');
+
+Route::get('/profil', function () {
+    return view('profil/profil');
+})->name('profil');
+
 Route::middleware(['web', 'auth'])->group(function () {
     Route::get('/', [UserController::class, 'index'])->name('home');
 });

@@ -1,23 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@200&display=swap');
 
-
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     width: 100%;
     height: 100vh;
     background-color: #28263A !important;
     overflow-x: hidden;
-}
-
-
-.dasar {
-    min-width: 100%; 
-    width: 100%;
-
-    padding-top: 6%;
 }
 
 .navbar {
@@ -26,6 +13,9 @@ body {
     color: #ffff;
 }
 
+.navbar {
+    height: 8% !important;
+}
 
 .aktif {
     border-bottom: 3px solid #6E2EAE;
@@ -35,12 +25,6 @@ body {
     outline: none;
     border: none;
     background: #6E2EAE;
-}
-
-.tombol.vip:focus {
-    outline: none;
-    border: none;
-    background: #ffffff;
 }
 
 a {
@@ -89,14 +73,11 @@ a {
     color: #fff;
 }
 
-a.vip {
+.btn.vip {
     background: #ffff;
-    padding: 10px !important;
+    border-radius: 20px !important;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-
-    text-decoration: none;
-    color: #333333;
 }
 
 .btn {
@@ -106,41 +87,121 @@ a.vip {
 }
 
 
-.dasar p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    font-weight: bold;
-    line-height: -0.3px;
+/* Container */
+
+.container {
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    padding-top: 3.9%;
+
+    /* overflow: hidden; */
 }
+
 
 .banner {
+    width: 90%;
+    height: 100%;
+    position: relative;
+    padding-bottom: 1%;
+}
+
+.img {
     width: 100%;
-    height: 40%;
+    height: 100%;
+    background: url('../image/banner/kunfu_banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(7px);
+
+    position: absolute;
+    top: 0;
 }
 
-.banner img {
-    pointer-events: none;
+video{
+    position: relative;
+}
 
+.detail {
+    position: absolute;
+    z-index: 99;
+    top: 4%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 3% 6%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.kartus {
+    width: 30%;
+}
+
+.kartus img{
+    width: 243px;
+    height: 365px;
+
+    border-radius: 20px;
 }
 
 
-.topMovie {
-    height: 80%;
-    background: #28263A;
-    border-radius: 30px;
+.konten {
+    width: 70%;
 }
 
 
-.kartu {
-    border-radius: 20px !important;
-    background: #28263A !important;
-    border: none !important;
+.tombols {
+    width: 80%;
 }
 
-.kartu p {
-    font-size: 1em !important;
-    margin-bottom: 0 !important;
+.tombol-trailer , .tombol-trailer:focus {
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+    padding: 1% 2%;
+
+    border-radius: 20px;
+
+    color: #ffff;
+
+    background: rgba(255, 255, 255, 0.5);
 }
+
+.tombol-film, .tombol-film:focus {
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+    padding: 1% 3%;
+
+    border-radius: 20px;
+
+    color: #ffff;
+
+    background: #6E2EAE;
+}
+
+.sipnopsis {
+    width: 95%;
+}
+
+
+
+/* rekomen */
+
+.rekomen {
+    width: 100%;
+    z-index: 99999;
+
+    background: #1D1C2A;
+
+    padding: 1.5% 0;
+}
+
 
 .owl-dots {
     display: none;
@@ -177,36 +238,19 @@ a.vip {
     justify-content: center;
 }
 
-.movie {
-    background-color: #28263A !important;
+.kartu {
+    border-radius: 20px !important;
+    background: #ffff !important;
+    border: none !important;
+}
+
+.kartu p {
+    font-size: 1em !important;
+    margin-bottom: 0 !important;
 }
 
 .movie p {
     font-family: 'Montserrat', sans-serif;
     font-size: 23px;
     font-weight: bold;
-}
-
-.owl-carousel-kedua .owl-nav span {
-    color: #ffff;
-}
-
-
-.owl-carousel-kedua .kartu {
-    background: #ffff !important;
-}
-
-
-.owl-carousel-kedua .owl-nav button{
-    background-color: transparent !important;
-    cursor: pointer;
-}
-
-
-.nemo {
-    background: linear-gradient(to right, #09247D, #082465);
-}
-
-.nemo span {
-    color: #ffff;
 }

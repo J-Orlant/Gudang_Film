@@ -38,54 +38,6 @@ class FilmSeeder extends Seeder
             'type' => 'f',
             'release' => 2019,
         ]);
-        Film::create([
-            'banner' => 'alita.jpg',
-            'video' => 'alita.mp4',
-            'trailer' => 'alitatrailer.mp4',
-            'name' => 'Alita',
-            'synopsis' => 'Alita terbangun di dunia masa depan yang tak ia kenal, dan tanpa ingatan tentang siapa dirinya. Ia kemudian dibawa oleh Ido, seorang dokter simpatik yang menyadari bahwa di dalam tubuh robot Alita yang sempat terbengkalai itu terdapat hati dan jiwa seorang wanita muda dengan kisah masa lalu yang luar biasa',
-            'producer' => 'James Cameron, Jon Landau, David Valdes',
-            'duration' => '2 hours 2 min',
-            'genre' => 'Action/Sci-fi',
-            'type' => 'f',
-            'release' => 2019,
-        ]);
-        Film::create([
-            'banner' => 'alita.jpg',
-            'video' => 'alita.mp4',
-            'trailer' => 'alitatrailer.mp4',
-            'name' => 'Alita',
-            'synopsis' => 'Alita terbangun di dunia masa depan yang tak ia kenal, dan tanpa ingatan tentang siapa dirinya. Ia kemudian dibawa oleh Ido, seorang dokter simpatik yang menyadari bahwa di dalam tubuh robot Alita yang sempat terbengkalai itu terdapat hati dan jiwa seorang wanita muda dengan kisah masa lalu yang luar biasa',
-            'producer' => 'James Cameron, Jon Landau, David Valdes',
-            'duration' => '2 hours 2 min',
-            'genre' => 'Action/Sci-fi',
-            'type' => 'f',
-            'release' => 2019,
-        ]);
-        Film::create([
-            'banner' => 'alita.jpg',
-            'video' => 'alita.mp4',
-            'trailer' => 'alitatrailer.mp4',
-            'name' => 'Alita',
-            'synopsis' => 'Alita terbangun di dunia masa depan yang tak ia kenal, dan tanpa ingatan tentang siapa dirinya. Ia kemudian dibawa oleh Ido, seorang dokter simpatik yang menyadari bahwa di dalam tubuh robot Alita yang sempat terbengkalai itu terdapat hati dan jiwa seorang wanita muda dengan kisah masa lalu yang luar biasa',
-            'producer' => 'James Cameron, Jon Landau, David Valdes',
-            'duration' => '2 hours 2 min',
-            'genre' => 'Action/Sci-fi',
-            'type' => 'f',
-            'release' => 2019,
-        ]);
-        Film::create([
-            'banner' => 'alita.jpg',
-            'video' => 'alita.mp4',
-            'trailer' => 'alitatrailer.mp4',
-            'name' => 'Alita',
-            'synopsis' => 'Alita terbangun di dunia masa depan yang tak ia kenal, dan tanpa ingatan tentang siapa dirinya. Ia kemudian dibawa oleh Ido, seorang dokter simpatik yang menyadari bahwa di dalam tubuh robot Alita yang sempat terbengkalai itu terdapat hati dan jiwa seorang wanita muda dengan kisah masa lalu yang luar biasa',
-            'producer' => 'James Cameron, Jon Landau, David Valdes',
-            'duration' => '2 hours 2 min',
-            'genre' => 'Action/Sci-fi',
-            'type' => 'f',
-            'release' => 2019,
-        ]);
 
         // anime
         Film::create([
@@ -138,7 +90,7 @@ class FilmSeeder extends Seeder
             'synopsis' => 'Setelah bersahabat dengan hantu-hantu kecilnya selama bertahun-tahun, Risa (Prilly Latuconsina) yang semakin dewasa mulai merasa bahwa dirinya harus memiliki kehidupan normal seperti perempuan lainnya. Apalagi sekarang Risa sudah memiliki pacar bernama Dimas (Rizky Nazar), yang bekerja sebagai penyiar radio. Risa bahkan tidak menceritakan kepada Dimas tentang kemampuannya melihat hantu, dan kenyataan bahwa dia memiliki 5 sahabat kecil yang bukan manusia. Persahabatan Risa dan Peter CS menjadi goyah, setelah Risa merasa Peter CS mulai mengusili Dimas. Risa akhirnya memilih menutup mata batinnya agar dia bisa memulai hidup normal. Tapi ternyata, setelah menutup mata batinnya, mulai terjadi kejadian aneh.',
             'producer' => 'Manoj punjabi, K.K Dheeraj',
             'duration' => '1 hours 30 min',
-            'genre' => 'Drama',
+            'genre' => 'Horror/Drama',
             'type' => 'p',
             'release' => 2019,
         ]);

@@ -160,112 +160,23 @@
         <p class="text-light text-center pt-4">Drama</p>
         <div class="col-md-12">
             <div class="owl-carousel-kedua">
-
-                <div class="card kartu">
-                    <img class="card-img-top" src="image/zootopia.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
+            @foreach($dramas as $drama)
+                <a href="{{route('detail', $drama->id)}}">
+                    <div class="card kartu">
+                        <img class="card-img-top" src="image/zootopia.png" alt="">
+                        <div class="card-body pt-2 px-3">
+                            <p class="text-dark">{{$drama->name}}</p>
+                            <p class="text-dark pb-2">{{$drama->release}}</p>
+                            <div class="d-flex">
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-dark"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-
+                </a>
+                @endforeach
             </div>
         </div>
     </div>
@@ -273,20 +184,22 @@
         <p class="text-light text-center pt-5">Action</p>
         <div class="col-md-12">
             <div class="owl-carousel-kedua">
-                @foreach($films as $film)
-                <div class="card kartu">
-                    <img class="card-img-top" src="image/zootopia.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">{{$film->name}}</p>
-                        <p class="text-dark pb-2">{{$film->release}}</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
+                @foreach($actions as $action)
+                <a href="{{route('detail', $action->id)}}">
+                    <div class="card kartu">
+                        <img class="card-img-top" src="image/zootopia.png" alt="">
+                        <div class="card-body pt-2 px-3">
+                            <p class="text-dark">{{$action->name}}</p>
+                            <p class="text-dark pb-2">{{$action->release}}</p>
+                            <div class="d-flex">
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-dark"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 @endforeach
             </div>
         </div>
@@ -295,112 +208,23 @@
         <p class="text-light text-center pt-5">Romance</p>
         <div class="col-md-12">
             <div class="owl-carousel-kedua">
-
-                <div class="card kartu">
-                    <img class="card-img-top" src="image/zootopia.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
+            @foreach($comedys as $comedy)
+                <a href="{{route('detail', $comedy->id)}}">
+                    <div class="card kartu">
+                        <img class="card-img-top" src="image/zootopia.png" alt="">
+                        <div class="card-body pt-2 px-3">
+                            <p class="text-dark">{{$comedy->name}}</p>
+                            <p class="text-dark pb-2">{{$comedy->release}}</p>
+                            <div class="d-flex">
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-dark"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-
+                </a>
+                @endforeach
             </div>
         </div>
     </div>
@@ -408,112 +232,23 @@
         <p class="text-light text-center pt-5">Comedy</p>
         <div class="col-md-12">
             <div class="owl-carousel-kedua">
-
-                <div class="card kartu">
-                    <img class="card-img-top" src="image/zootopia.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
+            @foreach($romances as $romance)
+                <a href="{{route('detail', $romance->id)}}">
+                    <div class="card kartu">
+                        <img class="card-img-top" src="image/zootopia.png" alt="">
+                        <div class="card-body pt-2 px-3">
+                            <p class="text-dark">{{$romance->name}}</p>
+                            <p class="text-dark pb-2">{{$romance->release}}</p>
+                            <div class="d-flex">
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-dark"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-
+                </a>
+                @endforeach
             </div>
         </div>
     </div>
@@ -604,112 +339,23 @@
         <p class="text-light text-center pt-5">Horror</p>
         <div class="col-md-12">
             <div class="owl-carousel-kedua">
-
-                <div class="card kartu">
-                    <img class="card-img-top" src="image/zootopia.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
+            @foreach($horrors as $horror)
+                <a href="{{route('detail', $horror->id)}}">
+                    <div class="card kartu">
+                        <img class="card-img-top" src="image/zootopia.png" alt="">
+                        <div class="card-body pt-2 px-3">
+                            <p class="text-dark">{{$horror->name}}</p>
+                            <p class="text-dark pb-2">{{$horror->release}}</p>
+                            <div class="d-flex">
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-dark"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-
+                </a>
+                @endforeach
             </div>
         </div>
     </div>
@@ -718,112 +364,23 @@
         <p class="text-light text-center pt-5">Anime</p>
         <div class="col-md-12">
             <div class="owl-carousel-kedua">
-
-                <div class="card kartu">
-                    <img class="card-img-top" src="image/zootopia.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
+            @foreach($animes as $anime)
+                <a href="{{route('detail', $anime->id)}}">
+                    <div class="card kartu">
+                        <img class="card-img-top" src="image/zootopia.png" alt="">
+                        <div class="card-body pt-2 px-3">
+                            <p class="text-dark">{{$anime->name}}</p>
+                            <p class="text-dark pb-2">{{$anime->release}}</p>
+                            <div class="d-flex">
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-warning pr-2"></i>
+                                <i class="fas fa-star text-dark"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card kartu">
-                    <img class="img-fluid" src="image/kungfuPanda.png" alt="">
-                    <div class="card-body pt-2 px-3">
-                        <p class="text-dark">Kunfu Panda</p>
-                        <p class="text-dark pb-2">2016</p>
-                        <div class="d-flex">
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-warning pr-2"></i>
-                            <i class="fas fa-star text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-
+                </a>
+                @endforeach
             </div>
         </div>
     </div>

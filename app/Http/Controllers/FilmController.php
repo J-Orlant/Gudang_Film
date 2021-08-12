@@ -8,8 +8,5 @@ use App\Http\Controllers\Controller;
 
 class FilmController extends Controller
 {
-    public function index(){
-        $films = Film::where('genre', 'LIKE', 'action%')->get();
-        return view('home.home', compact('films'));
-    }
+    
 }

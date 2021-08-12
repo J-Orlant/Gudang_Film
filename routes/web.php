@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\FilmController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,5 +33,6 @@ Route::get('/profil', function () {
 })->name('profil');
 
 Route::middleware(['web', 'auth'])->group(function () {
-    Route::get('/', [FilmController::class, 'index'])->name('home');
+    Route::get('/', [UserController::class, 'index'])->name('home');
+    Route::get('/detail/{film}', [UserController::class, 'detail'])->name('detail');
 });

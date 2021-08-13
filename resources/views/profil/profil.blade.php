@@ -92,7 +92,7 @@
         <div class="account">
             <img width="50%" src="image/form_account.png" alt="">
         </div>
-
+        <a href="whatsapp://send?text=I wanna buy VIP&phone=+6282123595108" class="btn btn-warning text-light mt-4"><i class="fas fa-gem"></i> Get Vip!</a>
     </section>
 
     <!-- Bootstrap js -->

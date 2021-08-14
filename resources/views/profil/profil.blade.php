@@ -24,7 +24,11 @@
             <img src="image/logo.png" alt="">
         </a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <div class="search">
@@ -89,10 +93,24 @@
             </div>
         </div>
 
-        <div class="account">
-            <img width="50%" src="image/form_account.png" alt="">
+        <!-- Content -->
+        <div class="content">
+
+            <!-- account -->
+            <div class="account">
+                <img width="50%" src="image/form_account.png" alt="">
+            </div>
+
+            <!-- Subcription -->
+            <div class="subcription"></div>
+
+            <!-- redeem -->
+            <div class="redeem"></div>
+
+            <!-- history -->
+            <div class="history"></div>
+
         </div>
-        <a href="whatsapp://send?text=I wanna buy VIP&phone=+6282123595108" class="btn btn-warning text-light mt-4"><i class="fas fa-gem"></i> Get Vip!</a>
     </section>
 
     <!-- Bootstrap js -->
@@ -100,6 +118,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script>
+
+    </script>
 
 </body>
 

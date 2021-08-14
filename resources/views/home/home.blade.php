@@ -26,6 +26,10 @@
             <img src="image/logo.png" alt="">
         </a>
 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -67,13 +71,27 @@
                 </li>
             </ul>
             <div class="ml-auto">
-                <button class="btn nav-toogler rounded-3 tombol text-light p-2">Masuk Akun / Daftar</button>
+                <button href="" class="btn btn-warning text-light" id="pop-trigger"><i class="fas fa-gem"></i> Get Vip!</button>
                 <a class="btn nav-toogler tombol mx-3 p-2 vip" href="/profil">
                     <i class="fas fa-user"></i>
                 </a>
             </div>
         </div>
     </nav>
+
+
+    <div class="popUp d-none justify-content-center align-items-center">
+        <a href="whatsapp://send?text=I wanna buy VIP&phone=+6282123595108" class="d-flex justify-content-center align-items-center">
+            <div class="aa d-flex justify-content-center align-items-center">
+                <img src="image/image_card_pembayaran.png" width="50%" alt="">
+            </div>
+        </a>
+        <div class="bb">
+            <button class="cls">x</button>
+        </div>
+    </div>
+
+
 
     <div class="dasar">
         <p class="text-light pl-3">Film Popular Keluarga</p>
@@ -160,7 +178,7 @@
         <p class="text-light text-center pt-4">Drama</p>
         <div class="col-md-12">
             <div class="owl-carousel-kedua">
-            @foreach($dramas as $drama)
+                @foreach($dramas as $drama)
                 <a href="{{route('detail', $drama->id)}}">
                     <div class="card kartu">
                         <img class="card-img-top" src="image/zootopia.png" alt="">
@@ -208,7 +226,7 @@
         <p class="text-light text-center pt-5">Romance</p>
         <div class="col-md-12">
             <div class="owl-carousel-kedua">
-            @foreach($comedys as $comedy)
+                @foreach($comedys as $comedy)
                 <a href="{{route('detail', $comedy->id)}}">
                     <div class="card kartu">
                         <img class="card-img-top" src="image/zootopia.png" alt="">
@@ -232,7 +250,7 @@
         <p class="text-light text-center pt-5">Comedy</p>
         <div class="col-md-12">
             <div class="owl-carousel-kedua">
-            @foreach($romances as $romance)
+                @foreach($romances as $romance)
                 <a href="{{route('detail', $romance->id)}}">
                     <div class="card kartu">
                         <img class="card-img-top" src="image/zootopia.png" alt="">
@@ -339,7 +357,7 @@
         <p class="text-light text-center pt-5">Horror</p>
         <div class="col-md-12">
             <div class="owl-carousel-kedua">
-            @foreach($horrors as $horror)
+                @foreach($horrors as $horror)
                 <a href="{{route('detail', $horror->id)}}">
                     <div class="card kartu">
                         <img class="card-img-top" src="image/zootopia.png" alt="">
@@ -364,7 +382,7 @@
         <p class="text-light text-center pt-5">Anime</p>
         <div class="col-md-12">
             <div class="owl-carousel-kedua">
-            @foreach($animes as $anime)
+                @foreach($animes as $anime)
                 <a href="{{route('detail', $anime->id)}}">
                     <div class="card kartu">
                         <img class="card-img-top" src="image/zootopia.png" alt="">
@@ -441,6 +459,22 @@
                     loop: false
                 }
             }
+        })
+
+
+        $('#pop-trigger').click(function() {
+            // if ($(".popUp").hasClass('d-none')) {
+            //     $(".popUp").removeClass("d-none");
+            //     $(".popUp").addClass("d-flex");
+            // }
+
+            $(".popUp").toggleClass("d-none");
+            $(".popUp").toggleClass("d-flex");
+        })
+
+        $(".cls").click(function() {
+            $(".popUp").toggleClass("d-none");
+            $(".popUp").toggleClass("d-flex");
         })
     </script>
 

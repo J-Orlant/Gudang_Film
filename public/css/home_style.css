@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@200&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@200&display=swap");
 
 html {
     scroll-behavior: smooth;
@@ -8,13 +7,12 @@ html {
 body {
     width: 100%;
     height: 100vh;
-    background-color: #28263A !important;
+    background-color: #28263a !important;
     overflow-x: hidden;
 }
 
-
 .dasar {
-    min-width: 100%; 
+    min-width: 100%;
     width: 100%;
 
     padding-top: 6%;
@@ -22,19 +20,19 @@ body {
 
 .navbar {
     width: 100%;
-    background: #1D1C2B;
+    background: #1d1c2b;
     color: #ffff;
 }
 
-
 .aktif {
-    border-bottom: 3px solid #6E2EAE;
+    border-bottom: 3px solid #6e2eae;
 }
 
-.tombol, .tombol:focus {
+.tombol,
+.tombol:focus {
     outline: none;
     border: none;
-    background: #6E2EAE;
+    background: #6e2eae;
 }
 
 .tombol.vip:focus {
@@ -44,11 +42,10 @@ body {
 }
 
 a {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 30;
     font-weight: bold;
 }
-
 
 .search {
     position: relative;
@@ -64,11 +61,11 @@ a {
     height: 100%;
     color: #fff;
 
-    background: #82828B;
+    background: #82828b;
     outline: none;
     border: none;
     border-radius: 20px;
-    
+
     padding: 0 10px 0 45px;
 }
 
@@ -76,7 +73,7 @@ a {
     padding: 25%;
     color: #fff;
     font-size: 16;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
 }
 
@@ -92,7 +89,7 @@ a {
 a.vip {
     background: #ffff;
     padding: 10px !important;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
 
     text-decoration: none;
@@ -101,13 +98,12 @@ a.vip {
 
 .btn {
     border-radius: 20px !important;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: bolder;
 }
 
-
 .dasar p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 22px;
     font-weight: bold;
     line-height: -0.3px;
@@ -120,20 +116,17 @@ a.vip {
 
 .banner img {
     pointer-events: none;
-
 }
-
 
 .topMovie {
     height: 80%;
-    background: #28263A;
+    background: #28263a;
     border-radius: 30px;
 }
 
-
 .kartu {
     border-radius: 20px !important;
-    background: #28263A !important;
+    background: #28263a !important;
     border: none !important;
 }
 
@@ -156,13 +149,13 @@ a.vip {
     align-items: center;
 }
 
-.owl-nav button{
+.owl-nav button {
     width: 30px;
     border: none;
     outline: none;
 }
 
-.owl-nav button:focus{
+.owl-nav button:focus {
     border: none;
     outline: none;
 }
@@ -178,11 +171,11 @@ a.vip {
 }
 
 .movie {
-    background-color: #28263A !important;
+    background-color: #28263a !important;
 }
 
 .movie p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 23px;
     font-weight: bold;
 }
@@ -191,22 +184,52 @@ a.vip {
     color: #ffff;
 }
 
-
 .owl-carousel-kedua .kartu {
     background: #ffff !important;
 }
 
-
-.owl-carousel-kedua .owl-nav button{
+.owl-carousel-kedua .owl-nav button {
     background-color: transparent !important;
     cursor: pointer;
 }
 
-
 .nemo {
-    background: linear-gradient(to right, #09247D, #082465);
+    background: linear-gradient(to right, #09247d, #082465);
 }
 
 .nemo span {
     color: #ffff;
+}
+
+/* popup */
+
+.popUp {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.popUp .aa {
+    position: relative;
+}
+
+.popUp .bb {
+    top: 20%;
+    right: 26%;
+    position: absolute;
+}
+.popUp .bb .cls {
+    width: 50px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: transparent;
+}
+
+.cls:focus {
+    outline: none;
 }

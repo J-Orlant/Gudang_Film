@@ -112,7 +112,7 @@
 
                     <div class="d-flex justify-content-around align-items-center tombols">
                         <button class="tombol-trailer">Tonton Trailer</button>
-                        <button class="tombol-film">Tonton Film</button>
+                        <div class="tombol-film">Tonton Film</div>
                     </div>
                 </div>
             </div>
@@ -163,25 +163,30 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script>
-        $('.owl-carousel-kedua').owlCarousel({
-            loop: true,
-            margin: 100,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: true
-                },
-                600: {
-                    items: 5,
-                    nav: false
-                },
-                1000: {
-                    items: 6,
-                    nav: true,
-                    loop: false
-                }
-            }
+        // $('.owl-carousel-kedua').owlCarousel({
+        //     loop: true,
+        //     margin: 100,
+        //     responsiveClass: true,
+        //     responsive: {
+        //         0: {
+        //             items: 1,
+        //             nav: true
+        //         },
+        //         600: {
+        //             items: 5,
+        //             nav: false
+        //         },
+        //         1000: {
+        //             items: 6,
+        //             nav: true,
+        //             loop: false
+        //         }
+        //     }
+        // })
+
+        $('.tombol-film').click(function() {
+            $(".img").toggleClass("hide");
+            $(".detail").toggleClass("hide");
         })
     </script>
 </body>

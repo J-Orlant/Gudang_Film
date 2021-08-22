@@ -81,7 +81,8 @@
 
 
     <div class="popUp d-none justify-content-center align-items-center">
-        <a href="whatsapp://send?text=I wanna buy VIP&phone=+6282123595108" class="d-flex justify-content-center align-items-center">
+        <!-- whatsapp://send?text=I wanna buy VIP&phone=+6282123595108 -->
+        <a href="https://wa.me/6282123595108?text=I%20wanna%20buy%20VIP" class="d-flex justify-content-center align-items-center" target="_blank">
             <div class="aa d-flex justify-content-center align-items-center">
                 <img src="image/image_card_pembayaran.png" width="50%" alt="">
             </div>

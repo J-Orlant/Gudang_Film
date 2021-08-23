@@ -79,17 +79,17 @@
 
     <section class="container px-5">
         <div class="tab-bar d-flex">
-            <div class="link mr-5" id="active">
+            <div class="link mr-5 tablinks active" onclick="openCity(event, 'account')">
                 <p class="text-light">My Account</p>
             </div>
-            <div class="link mr-5">
-                <p class="text-light">Subcription</p>
+            <div class="link mr-5 tablinks" onclick="openCity(event, 'subcription')">
+                <p class="text-light">Redeem Voucher</p>
             </div>
-            <div class="link mr-5">
-                <p class="text-light">Reddem Voucher</p>
-            </div>
-            <div class="link mr-5">
+            <div class="link mr-5 tablinks" onclick="openCity(event, 'redeem')">
                 <p class="text-light">Watch History</p>
+            </div>
+            <div class="link mr-5 tablinks" onclick="openCity(event, 'history')">
+                <p class="text-light">Favorite</p>
             </div>
         </div>
 
@@ -97,21 +97,39 @@
         <div class="content">
 
             <!-- account -->
-            <div class="account">
-                <img width="50%" src="image/form_account.png" alt="">
+            <div class="tabcontent mt-5" id="account" style="display: block">
+                <img width="50%" src="image/form_account.png" alt=""> <br>
+                <a href="{{ route('logout') }}" class="btn btn-danger mt-5">Log Out</a>
             </div>
 
             <!-- Subcription -->
-            <div class="subcription"></div>
+            <div class="tabcontent mt-5" id="subcription" style="height: 500px">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="text-light" style="margin-top: 100px">Redeem Voucher</h2>
+                    <form action="" class="mt-5">
+                        <div class="row">
+                            <div class="col-md-7 mb-4 rounded">
+                                <input type="text" class="form-control" placeholder="Voucher Code">
+                            </div>
+                            <div class="col-md-5">
+                                <button class="btn rede">Redeem Code</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
             <!-- redeem -->
-            <div class="redeem"></div>
+            <div class="tabcontent mt-5" id="redeem">
+                <img src="/image/history.png" style="width: 80%" alt="">
+            </div>
 
             <!-- history -->
-            <div class="history"></div>
+            <div class="tabcontent mt-5" id="history">
+                <img src="/image/history.png" style="width: 80%" alt="">
+            </div>
 
         </div>
-        <a href="{{ route('logout') }}" class="btn btn-danger">Log Out</a>
     </section>
 
     <!-- Bootstrap js -->
@@ -120,7 +138,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script>
-
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
     </script>
 
 </body>

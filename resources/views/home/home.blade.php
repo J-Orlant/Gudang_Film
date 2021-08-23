@@ -317,7 +317,7 @@
                 @foreach($horrors as $horror)
                 <a href="{{route('detail', $horror->id)}}">
                     <div class="card kartu">
-                        <img class="card-img-top" src="image/zootopia.png" alt="">
+                        <img class="card-img-top" src="image/horror/{{$horror->banner}}" alt="">
                         <div class="card-body pt-2 px-3">
                             <p class="text-dark">{{$horror->name}}</p>
                             <p class="text-dark pb-2">{{$horror->release}}</p>

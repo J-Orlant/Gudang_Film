@@ -258,7 +258,7 @@ class FilmSeeder extends Seeder
             'producer' => 'Mira lesmana',
             'duration' => '2 hours 2 min',
             'genre' => 'Drama/Fiction',
-            'type' => 'p',
+            'type' => 'f',
             'release' => 2019,
         ]);
         Film::create([
@@ -284,6 +284,71 @@ class FilmSeeder extends Seeder
             'producer' => 'Manoj punjabi, K.K Dheeraj',
             'duration' => '1 hours 30 min',
             'genre' => 'Horror/Drama',
+            'type' => 'p',
+            'release' => 2019,
+        ]);
+
+        Film::create([
+            'banner' => 'rasuk2.jpg',
+            'video' => 'rasuk2.mp4',
+            'trailer' => 'rasuk2trailer.mp4',
+            'name' => 'Rasuk 2',
+            'synopsis' => 'From the best selling author of Danur Risa Saraswati. Isabella (Nikita Willy), seorang mahasiswi kedokteran yang sedang menjalani koas, merasa tidak nyaman dengan kemampuan indera keenam yang dimilikinya. Dia berupaya kuat mengabaikan semua penglihatan batin yang dilihatnya, menganggap mereka tidak ada agar bisa hidup layak dengan normal.',
+            'producer' => 'Dheeraj kalwani',
+            'duration' => '1 hours 35 min',
+            'genre' => 'Horror/Thriller',
+            'type' => 'f',
+            'release' => 2019,
+        ]);
+
+        Film::create([
+            'banner' => 'perjanjian-dengan-iblis.jpg',
+            'video' => 'perjanjian-dengan-iblis.mp4',
+            'trailer' => 'perjanjian-dengan-iblistrailer.mp4',
+            'name' => 'Perjanjian dengan iblis',
+            'synopsis' => 'ANNISA (24thn) menikah dengan BARA (32thn), duda dengan seorang anak perempuan bernama LARA (8thn). Bara ingin agar kedua orang yang dicintainya bisa akrab,maka ia mengajak keduanya piknik ke pulau yang masih jarang didatangi oleh para wisatawan, Pulau Bengalor.',
+            'producer' => 'Manoj punjabi, Dheeraj kalwani',
+            'duration' => '1 hours 20 min',
+            'genre' => 'Horror',
+            'type' => 'f',
+            'release' => 2018,
+        ]);
+
+        Film::create([
+            'banner' => 'sebelum-iblis-menjemput.jpg',
+            'video' => 'Sebelum-iblis-menjemput.mp4',
+            'trailer' => 'Sebelum-iblis-menjemputtrailer.mp4',
+            'name' => 'Sebelum iblis menjemput',
+            'synopsis' => 'Film ini bercerita tentang seorang PEREMPUAN MUDA (20-an) dengan hidup yang kelam. IBUnya (50-an) meninggal dengan misterius, kemudian AYAHnya (60-an) meninggalkan Perempuan Muda dan menikah kembali dengan seorang IBU CANTIK (40-an) yang sudah memiliki dua orang ANAK (20-an) dengan umur sepantaran dengan Perempuan Muda.',
+            'producer' => 'Timo tjahjanto, Abimana aryasatya, Wicky V. Olindo, Sukhdev singh',
+            'duration' => '1 hours 50 min',
+            'genre' => 'Horror/Drama',
+            'type' => 'p',
+            'release' => 2019,
+        ]);
+
+        Film::create([
+            'banner' => 'suicide.jpg',
+            'video' => 'Suicide.mp4',
+            'trailer' => 'Suicidetrailer.mp4',
+            'name' => 'Suicide Club/Suicide Cirlce',
+            'synopsis' => 'Film yang sebenarnya mempunyai judul Suicide Circle ini berfokus pada upaya seorang anggota polisi kawakan yang menjelang masa pensiunnya harus menghadapi kasus terbesar dalam karier kepolisiannya – mengusut tuntas kasus fenomena aksi bunuh diri massal yang tiba-tiba melanda seantero Tokyo',
+            'producer' => 'Seiya kawamata, Toshiie tomida, Junichi tanaka, Seiji yoshida',
+            'duration' => '1 hours 39 min',
+            'genre' => 'Horror/Drama/Thriller',
+            'type' => 'p',
+            'release' => 2019,
+        ]);
+
+        Film::create([
+            'banner' => 'the-conjuring-3.jpg',
+            'video' => 'the-conjuring-3.mp4',
+            'trailer' => 'the-conjuring-3trailer.mp4',
+            'name' => 'The conjuring 3',
+            'synopsis' => 'Kisah mengerikan tentang teror, pembunuhan, dan kejahatan tak diketahui sebelumnya kisah yang mengejutkan bahkan dialami oleh keluarga Ed dan Lorraine Warren. Salah satu kasus paling sensasional dari arsip penyelidikan mereka, dimulai dengan pertarungan untuk jiwa seorang anak laki-laki, kemudian membawa mereka kepada seuatu yang belum pernah mereka lihat dan alami sebelumnya.',
+            'producer' => 'James wan, Peter safran',
+            'duration' => '1 hours 52 min',
+            'genre' => 'Horror/Thriller/Mystery',
             'type' => 'p',
             'release' => 2019,
         ]);

@@ -92,7 +92,7 @@
         <div class="banner">
             <!-- Video -->
             <video controls="controls" id="video" width="100%" height="auto">
-                <source src="/video/raiden.mp4" type='video/mp4'>
+                <source src="/video/{{$film->video}}" type='video/mp4'>
             </video>
 
 

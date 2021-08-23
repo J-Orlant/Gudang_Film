@@ -68,8 +68,10 @@
                 </li>
             </ul>
             <div class="ml-auto">
-                <button class="btn nav-toogler rounded-3 tombol text-light p-2">Masuk Akun / Daftar</button>
-                <button class="btn nav-toogler rounded-3 tombol mx-3 p-2 vip">+ VIP</button>
+                <button href="" class="btn btn-warning text-light" id="pop-trigger"><i class="fas fa-gem"></i> Get Vip!</button>
+                <a class="btn nav-toogler tombol mx-3 p-2 vip" href="/profil">
+                    <i class="fas fa-user"></i>
+                </a>
             </div>
         </div>
     </nav>
@@ -113,6 +115,7 @@
                         @if($user->type == 'free')
                             @if($film->type == 'p')
                                 <div class="tombol-film">Gk Bsa Tonton Film</div>
+                                pop up -> get vip
                             @else
                                 <div class="tombol-film">Bsa Tonton Film</div>
                             @endif

@@ -106,10 +106,11 @@
             <div class="tabcontent mt-5" id="subcription" style="height: 500px">
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <h2 class="text-light" style="margin-top: 100px">Redeem Voucher</h2>
-                    <form action="" class="mt-5">
+                    <form action="{{ route('redeem') }}" method="post" class="mt-5">
+                        @csrf
                         <div class="row">
                             <div class="col-md-7 mb-4 rounded">
-                                <input type="text" class="form-control" placeholder="Voucher Code">
+                                <input type="text" name="code" class="form-control" placeholder="Voucher Code">
                             </div>
                             <div class="col-md-5">
                                 <button class="btn rede">Redeem Code</button>

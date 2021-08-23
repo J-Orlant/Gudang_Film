@@ -32,4 +32,5 @@ Route::middleware(['web', 'auth'])->group(function () {
     Route::get('/', [UserController::class, 'index'])->name('home');
     Route::get('/detail/{film}', [UserController::class, 'detail'])->name('detail');
     Route::get('/logout', [UserController::class, 'logout'])->name('logout');
+    Route::post('/redeem', [UserController::class, 'redeem'])->name('redeem');
 });

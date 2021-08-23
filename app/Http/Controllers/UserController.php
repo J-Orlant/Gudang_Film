@@ -8,6 +8,7 @@ use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redis;
 
 class UserController extends Controller
 {
@@ -28,6 +29,15 @@ class UserController extends Controller
         $genre = Str::lower($genre->genre);
         $satuan = explode("/", $genre);
         return view('detailFilm.detailFilm', compact('film', 'satuan', 'user'));
+    }
+
+    public function redeem(Request $request){
+        $user = User::where('id', Auth::user()->id)->first();
+        $user->update([
+            'type' => 'prem'
+        ]);
+        $user->save();
+        return redirect(route('home'));
     }
 
     public function logout(){

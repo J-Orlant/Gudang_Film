@@ -182,7 +182,7 @@
                 @foreach($dramas as $drama)
                 <a href="{{route('detail', $drama->id)}}">
                     <div class="card kartu">
-                        <img class="card-img-top" src="image/zootopia.png" alt="">
+                        <img class="card-img-top" src="image/drama/{{ $drama->banner }}" alt="" style="height: 300px">
                         <div class="card-body pt-2 px-3">
                             <p class="text-dark">{{$drama->name}}</p>
                             <p class="text-dark pb-2">{{$drama->release}}</p>
@@ -206,7 +206,7 @@
                 @foreach($actions as $action)
                 <a href="{{route('detail', $action->id)}}">
                     <div class="card kartu">
-                        <img class="card-img-top" src="image/zootopia.png" alt="">
+                        <img class="card-img-top" src="image/action/{{ $action->banner }}" alt="" style="height: 300px">
                         <div class="card-body pt-2 px-3">
                             <p class="text-dark">{{$action->name}}</p>
                             <p class="text-dark pb-2">{{$action->release}}</p>
@@ -386,7 +386,7 @@
                 @foreach($animes as $anime)
                 <a href="{{route('detail', $anime->id)}}">
                     <div class="card kartu">
-                        <img class="card-img-top" src="image/zootopia.png" alt="">
+                        <img class="card-img-top" src="image/anime/{{ $anime->banner }}" alt="" style="height: 300px">
                         <div class="card-body pt-2 px-3">
                             <p class="text-dark">{{$anime->name}}</p>
                             <p class="text-dark pb-2">{{$anime->release}}</p>

@@ -22,6 +22,18 @@
 
 <body>
 
+    <div class="popUp d-none justify-content-center align-items-center">
+        <!-- whatsapp://send?text=I wanna buy VIP&phone=+6282123595108 -->
+        <a href="https://wa.me/6282123595108?text=I%20wanna%20buy%20VIP" class="d-flex justify-content-center align-items-center" target="_blank">
+            <div class="aa d-flex justify-content-center align-items-center">
+                <img src="/image/image_card_pembayaran.png" width="50%" alt="">
+            </div>
+        </a>
+        <div class="bb">
+            <button class="cls">x</button>
+        </div>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <a class="navbar-brand text-light mr-5" href="#">
             <img src="image/logo.png" width="80%" alt="">
@@ -37,25 +49,25 @@
                 </li>
 
                 <li class="nav-item ml-5 aktif">
-                    <a class="nav-link" href="#"><i class="fas fa-home text-light"></i> <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/"><i class="fas fa-home text-light"></i> <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link text-light" href="#drama">Drama</a>
+                    <a class="nav-link text-light" href="/#drama">Drama</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link text-light" href="#action">Action</a>
+                    <a class="nav-link text-light" href="/#action">Action</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link text-light" href="#romance">Romance</a>
+                    <a class="nav-link text-light" href="/#romance">Romance</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link text-light" href="#comedy">Comedy</a>
+                    <a class="nav-link text-light" href="/#comedy">Comedy</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link text-light" href="#horror">Horror</a>
+                    <a class="nav-link text-light" href="/#horror">Horror</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link text-light" href="#anime">Anime</a>
+                    <a class="nav-link text-light" href="/#anime">Anime</a>
                 </li>
                 <li class="nav-item mx-3 dropdown">
                     <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -114,13 +126,12 @@
                         <button class="tombol-trailer">Tonton Trailer</button>
                         @if($user->type == 'free')
                             @if($film->type == 'p')
-                                <div class="tombol-film">Gk Bsa Tonton Film</div>
-                                pop up -> get vip
+                                <button class="btn tombol-film" id="pop-trig">Tonton Film</button>
                             @else
-                                <div class="tombol-film">Bsa Tonton Film</div>
+                                <div class="tombol-film free">Tonton Film</div>
                             @endif
                         @else{
-                            <div class="tombol-film">Bsa Tonton Semua Film</div>
+                            <div class="tombol-film free">Tonton Film</div>
                         }
                         @endif
                     </div>
@@ -154,6 +165,8 @@
         </div>
     </section>
 
+    
+
 
     <div class="col-lg-12  d-flex flex-column justify-content-center align-items-center" style="height: 20%; background: #1D1C2A;">
         <p class="text-light">&copy; Copyright Weebs. All Rights Reserved</p>
@@ -174,9 +187,33 @@
 
     <script>
 
-        $('.tombol-film').click(function() {
+        $('.free').click(function() {
             $(".img").toggleClass("hide");
             $(".detail").toggleClass("hide");
+        })
+
+        $('#pop-trigger').click(function() {
+            // if ($(".popUp").hasClass('d-none')) {
+            //     $(".popUp").removeClass("d-none");
+            //     $(".popUp").addClass("d-flex");
+            // }
+
+            $(".popUp").toggleClass("d-none");
+            $(".popUp").toggleClass("d-flex");
+        })
+        $('#pop-trig').click(function() {
+            // if ($(".popUp").hasClass('d-none')) {
+            //     $(".popUp").removeClass("d-none");
+            //     $(".popUp").addClass("d-flex");
+            // }
+
+            $(".popUp").toggleClass("d-none");
+            $(".popUp").toggleClass("d-flex");
+        })
+
+        $(".cls").click(function() {
+            $(".popUp").toggleClass("d-none");
+            $(".popUp").toggleClass("d-flex");
         })
     </script>
 </body>

@@ -173,3 +173,37 @@ a.vip {
 .form-control {
     border-radius: 40px !important;
 }
+
+
+/* popup */
+
+.popUp {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.popUp .aa {
+    position: relative;
+}
+
+.popUp .bb {
+    top: 20%;
+    right: 26%;
+    position: absolute;
+}
+.popUp .bb .cls {
+    width: 50px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: transparent;
+}
+
+.cls:focus {
+    outline: none;
+}

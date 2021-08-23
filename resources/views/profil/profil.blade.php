@@ -19,6 +19,18 @@
 </head>
 
 <body>
+    <div class="popUp d-none justify-content-center align-items-center">
+        <!-- whatsapp://send?text=I wanna buy VIP&phone=+6282123595108 -->
+        <a href="https://wa.me/6282123595108?text=I%20wanna%20buy%20VIP" class="d-flex justify-content-center align-items-center" target="_blank">
+            <div class="aa d-flex justify-content-center align-items-center">
+                <img src="/image/image_card_pembayaran.png" width="50%" alt="">
+            </div>
+        </a>
+        <div class="bb">
+            <button class="cls">x</button>
+        </div>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <a class="navbar-brand text-light mr-5" href="#">
             <img src="image/logo.png" alt="">
@@ -38,25 +50,25 @@
                 </li>
 
                 <li class="nav-item ml-5 aktif">
-                    <a class="nav-link" href="#"><i class="fas fa-home text-light"></i> <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/"><i class="fas fa-home text-light"></i> <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link text-light" href="#drama">Drama</a>
+                    <a class="nav-link text-light" href="/#drama">Drama</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link text-light" href="#action">Action</a>
+                    <a class="nav-link text-light" href="/#action">Action</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link text-light" href="#romance">Romance</a>
+                    <a class="nav-link text-light" href="/#romance">Romance</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link text-light" href="#comedy">Comedy</a>
+                    <a class="nav-link text-light" href="/#comedy">Comedy</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link text-light" href="#horror">Horror</a>
+                    <a class="nav-link text-light" href="/#horror">Horror</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link text-light" href="#anime">Anime</a>
+                    <a class="nav-link text-light" href="/#anime">Anime</a>
                 </li>
                 <li class="nav-item mx-3 dropdown">
                     <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -69,7 +81,7 @@
                 </li>
             </ul>
             <div class="ml-auto">
-                <button class="btn nav-toogler rounded-3 tombol text-light p-2">Masuk Akun / Daftar</button>
+                <button href="" class="btn btn-warning text-light" id="pop-trigger"><i class="fas fa-gem"></i> Get Vip!</button>
                 <a class="btn nav-toogler tombol mx-3 p-2 vip" href="/profil">
                     <i class="fas fa-user"></i>
                 </a>
@@ -152,6 +164,21 @@
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
         }
+
+        $('#pop-trigger').click(function() {
+            // if ($(".popUp").hasClass('d-none')) {
+            //     $(".popUp").removeClass("d-none");
+            //     $(".popUp").addClass("d-flex");
+            // }
+
+            $(".popUp").toggleClass("d-none");
+            $(".popUp").toggleClass("d-flex");
+        })
+
+        $(".cls").click(function() {
+            $(".popUp").toggleClass("d-none");
+            $(".popUp").toggleClass("d-flex");
+        })
     </script>
 
 </body>

@@ -187,6 +187,18 @@ class FilmSeeder extends Seeder
             'type' => 'p',
             'release' => 2020,
         ]);
+        Film::create([
+            'banner' => 'warkodki.jpg',
+            'video' => 'warkodki.mp4',
+            'trailer' => 'warkopdkitrailer.mp4',
+            'name' => 'Ace Ventura',
+            'synopsis' => 'Detektif hewan Ace Ventura keluar dari masa pensiunnya untuk menyelidiki kasus hilangnya seekor kelelawar putih langka, simbol dari suku Afrika.',
+            'producer' => 'James G. Robinson, Peter bogart',
+            'duration' => '1 hours 40 min',
+            'genre' => 'Comedy/Action/Mystery/Thriller/Crime ',
+            'type' => 'f',
+            'release' => 2020,
+        ]);
 
         // Drama
         Film::create([

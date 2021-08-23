@@ -111,6 +111,7 @@
             <div class="history"></div>
 
         </div>
+        <a href="{{ route('logout') }}" class="btn btn-danger">Log Out</a>
     </section>
 
     <!-- Bootstrap js -->

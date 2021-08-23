@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Film;
+use App\Models\User;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -14,6 +18,20 @@ class UserController extends Controller
         $dramas = Film::where('genre', 'LIKE', 'drama%')->get();
         $horrors = Film::where('genre', 'LIKE', 'horror%')->get();
         $romances = Film::where('genre', 'LIKE', 'romance%')->get();
-        return view('home.home', compact('actions', 'animes', 'comedys', 'dramas', 'horrors', 'romances'));
+        $populars = Film::where('type', 'p')->get();
+        return view('home.home', compact('actions', 'animes', 'comedys', 'dramas', 'horrors', 'romances', 'populars'));
+    }
+
+    public function detail(Film $film){
+        $user = user::where('id', Auth::user()->id)->first();
+        $genre = Film::where('genre', 'LIKE',  $film->genre.'%')->first();
+        $genre = Str::lower($genre->genre);
+        $satuan = explode("/", $genre);
+        return view('detailFilm.detailFilm', compact('film', 'satuan', 'user'));
+    }
+
+    public function logout(){
+        Auth::logout();
+        return redirect(route('login'));
     }
 }

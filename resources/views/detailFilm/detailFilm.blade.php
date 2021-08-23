@@ -5,20 +5,18 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
+    <!-- css -->
+    <link rel="stylesheet" href="/css/detail_style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- FontAwsome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-
-    <!-- css -->
-    <link rel="stylesheet" href="css/detail_style.css">
-
     <!-- Owl -->
-    <link rel="stylesheet" href="plugin/owlcarousel/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="plugin/owlcarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/plugin/owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/plugin/owlcarousel/dist/assets/owl.theme.default.min.css">
     <title>Gudang Film</title>
 </head>
 
@@ -79,8 +77,8 @@
     <section class="container d-flex justify-content-center">
         <div class="banner">
             <!-- Video -->
-            <video controls="controls" autoplay="true" id="video" width="100%" height="auto">
-                <source src="/video/everlasting.mp4" type='video/mp4'>
+            <video controls="controls" id="video" width="100%" height="auto">
+                <source src="/video/raiden.mp4" type='video/mp4'>
             </video>
 
 
@@ -92,13 +90,13 @@
 
             <div class="detail">
                 <div class="kartus">
-                    <img src="image/kungfuPanda.png" alt="">
+                    <img src="/image/{{$satuan[0]}}/{{$film->banner}}" alt="">
                 </div>
 
                 <div class="konten">
-                    <h2 class="judul text-light">Kung fu Panda 3</h2>
-                    <p class="tahun text-light">2016</p>
-                    <p class="durasi text-light">1 Hr 35 Min | <span class="genre">Comedy, Family</span></p>
+                    <h2 class="judul text-light">{{$film->name}}</h2>
+                    <p class="tahun text-light">{{$film->release}}</p>
+                    <p class="durasi text-light">{{$film->duration}} | <span class="genre">{{$film->genre}}</span></p>
                     <div class="d-flex">
                         <i class="fas fa-star text-warning mr-3"></i>
                         <p class="text-light mr-3">8,5/<span>10</span></p>
@@ -107,12 +105,21 @@
                         </p>
                     </div>
                     <p class="sipnopsis text-light">
-                        Di alam roh, Oogway bertarung melawan musuh lamanya, seorang pejuang mayat hidup bernama Kai, yang telah mengalahkan semua master kungfu lainnya di dunia dan mengambil chi mereka. Oogway juga terperangkap dan chi-nya dicuri, tetapi tidak sebelum dia memperingatkan Kai bahwa Dragon Warrior, Po, akan menghentikannya. Kai menganggap ini sebagai tantangan untuk mencuri chi Dragon Warrior dan kembali ke alam dunia. Sementara itu, Master Shifu mengumumkan dirinya pensiun dari mengajar dan menyerahkan peran guru kepada Po. Po yang awalnya bersemangat menyadari bahwa mengajar kung fu tidak semudah yang diharapkan, dan Furious Five terluka sebagai hasilnya. Po mengalami demoralisasi karena kegagalannya, tetapi Shifu menyarankan Po bahwa alih-alih mencoba menjadi seperti Shifu, ia harus mencoba menjadi dirinya sendiri.
+                        {{$film->synopsis}}
                     </p>
 
                     <div class="d-flex justify-content-around align-items-center tombols">
                         <button class="tombol-trailer">Tonton Trailer</button>
-                        <div class="tombol-film">Tonton Film</div>
+                        @if($user->type == 'free')
+                            @if($film->type == 'p')
+                                <div class="tombol-film">Gk Bsa Tonton Film</div>
+                            @else
+                                <div class="tombol-film">Bsa Tonton Film</div>
+                            @endif
+                        @else{
+                            <div class="tombol-film">Bsa Tonton Semua Film</div>
+                        }
+                        @endif
                     </div>
                 </div>
             </div>

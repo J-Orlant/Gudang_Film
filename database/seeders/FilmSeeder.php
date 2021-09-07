@@ -176,10 +176,10 @@ class FilmSeeder extends Seeder
 
         // comedy
         Film::create([
-            'banner' => 'warkodki.jpg',
+            'banner' => 'warkopdki.jpg',
             'video' => 'warkodki.mp4',
             'trailer' => 'warkopdkitrailer.mp4',
-            'name' => 'Warkodki',
+            'name' => 'Warkopdki',
             'synopsis' => 'Film yang menghidupkan kembali legenda trio komedi Warkop. Dono, Kasino dan Indro kembali beraksi di tengah hiruk pikuknya kota DKI Jakarta. Mereka sekali lagi berperan sebagai personel sebuah Lembaga Swasta yang bernama CHIIPS (Cara Hebat Ikut-Ikutan Penanggulangan Sosial). Walaupun di dalam diri mereka dipenuhi semangat yang menggelora dalam menjalankan tugas-tugasnya melayani masyarakat, namun kekacauan dan huru-hara selalu mereka timbulkan akibat aksi mereka yang konyol dan selalu mengocok perut.',
             'producer' => 'Frederica',
             'duration' => '1 hours 50 min',
@@ -188,7 +188,7 @@ class FilmSeeder extends Seeder
             'release' => 2020,
         ]);
         Film::create([
-            'banner' => 'warkodki.jpg',
+            'banner' => 'ace-ventura-when-nature-calls-movie-poster.jpg',
             'video' => 'warkodki.mp4',
             'trailer' => 'warkopdkitrailer.mp4',
             'name' => 'Ace Ventura',
@@ -196,6 +196,66 @@ class FilmSeeder extends Seeder
             'producer' => 'James G. Robinson, Peter bogart',
             'duration' => '1 hours 40 min',
             'genre' => 'Comedy/Action/Mystery/Thriller/Crime ',
+            'type' => 'f',
+            'release' => 2020,
+        ]);
+        Film::create([
+            'banner' => 'big-mommas-like-father-like-son-movie-poster1.jpg',
+            'video' => 'warkodki.mp4',
+            'trailer' => 'warkopdkitrailer.mp4',
+            'name' => 'Big Mommas: like father like son',
+            'synopsis' => 'Kali ini, Malcolm Turner melindungi anak selama 17 tahun, Trent, menjadi saksi pembunuhan. Ayah dan anak menyamar di sekolah seni khusus wanita sebagai Big Momma dan cucu perempuan nya, Charmaine.',
+            'producer' => 'David T. Friendly, Michael green',
+            'duration' => '1 hours 48 min',
+            'genre' => 'Comedy/Action/Crime',
+            'type' => 'f',
+            'release' => 2020,
+        ]);
+        Film::create([
+            'banner' => 'chaplin.jpg',
+            'video' => 'warkodki.mp4',
+            'trailer' => 'warkopdkitrailer.mp4',
+            'name' => 'Charlie Chaplin',
+            'synopsis' => 'Charlie chaplin adalah seorang pelawak, sutradara film, dan komposer dari Inggris yang terkenal pada era film bisu. Ia menjadi ikon dunia melalui persona layarnya, "Tramp", dan dianggap sebagai salah satu tokoh penting dalam sejarah industri film. Dia telah berkarier selama lebih dari 75 tahun sejak masa kanak-kanaknya pada era Victoria hingga setahun sebelum kematiannya pada tahun 1977. Kariernya diwarnai dengan sanjungan maupun kontroversi.',
+            'producer' => 'mack sennett',
+            'duration' => '20 min',
+            'genre' => 'Comedy/Drama',
+            'type' => 'f',
+            'release' => 2020,
+        ]);
+        Film::create([
+            'banner' => 'ghost-busters.jpg',
+            'video' => 'warkodki.mp4',
+            'trailer' => 'warkopdkitrailer.mp4',
+            'name' => 'Ghost busters',
+            'synopsis' => 'Peter Venkman, Raymond Stantz dan Egon Spengler kehilangan pekerjaan mereka sebagai parapsychologists dan memulai membentuk grup Ghostbusters - dengan misi memburu hantu-hantu jahat di kota New York.',
+            'producer' => 'Ivan Reitman',
+            'duration' => '1 hours 47 min',
+            'genre' => 'Comedy/Fantasy/Sci-fi',
+            'type' => 'f',
+            'release' => 2020,
+        ]);
+        Film::create([
+            'banner' => 'ghost-team.jpg',
+            'video' => 'warkodki.mp4',
+            'trailer' => 'warkopdkitrailer.mp4',
+            'name' => 'Ghost team',
+            'synopsis' => 'Seorang pemburu hantu merekrut beberapa orang amatir untuk menyelidiki gerak gerik mencurigakan yang berlangsung di sebuah peternakan terpencil.',
+            'producer' => 'Julie christeas, Schuyler weiss, Alex sagalchik',
+            'duration' => '1 hours 25 min',
+            'genre' => 'Comedy/Thriller',
+            'type' => 'f',
+            'release' => 2020,
+        ]);
+        Film::create([
+            'banner' => 'home-alone.jpg',
+            'video' => 'warkodki.mp4',
+            'trailer' => 'warkopdkitrailer.mp4',
+            'name' => 'Home alone',
+            'synopsis' => 'Kevin, 8 tahun, tak sengaja tertinggal dirumah saat keluarganya liburan ke Perancis. Awalnya ia justru merasa merdeka, tapi saat komplotan pencuri mencoba masuk, ia mencari seribu akal untuk bertahan!',
+            'producer' => 'JJohn hughes, Tarquin gotch, Mark levinson',
+            'duration' => '1 hours 43 min',
+            'genre' => 'Comedy/Adventure/Children’s',
             'type' => 'f',
             'release' => 2020,
         ]);
@@ -355,16 +415,100 @@ class FilmSeeder extends Seeder
 
         // Romance
         Film::create([
-            'banner' => 'peelbound.jpg',
+            'banner' => 'spellbound.jpg',
             'video' => 'peelbound.mp4',
             'trailer' => 'peelboundtrailer.mp4',
-            'name' => 'Speelbound',
+            'name' => 'Spellbound',
             'synopsis' => 'Menceritakan kisah dari Yeo-Ri yang diperankan oleh Son Ye-Jin, seorang wanita muda yang sejak kecil dapat melihat hantu.Sebab itu, banyak hal-hal tak terduga sering terjadi pada orang yang berada di sekitar Yeo Ri. Karena kekuatan alami yang la miliki Yeo-Ri menjauhkan diri dari dunia luar.Di sisi lain, Jo-Goo diperankan oleh Lee Min-Ki adalah seorang pesulap jalanan. Suatu ketika Dia menonton pertunjukkannya.Jo Goo tertarik dengan Yeo Ri, sosok wanita yang hadir diantara para penonton. ',
             'producer' => 'Won-tae lee, An young jin',
             'duration' => '1 hours 54 min',
             'genre' => 'Romance/Horror',
             'type' => 'p',
             'release' => 2011,
+        ]);
+        Film::create([
+            'banner' => 'a-moment-to-remember.jpg',
+            'video' => 'peelbound.mp4',
+            'trailer' => 'peelboundtrailer.mp4',
+            'name' => 'A Moment to Remember',
+            'synopsis' => 'A Moment to Remember bercerita tentang seorang wanita bernama Su Jin (Son Ye Jin) yang tak sengaja bertemu Chul Soo (Jung Woo Sung). Mereka sempat mengalami salah paham ketika Su Jin salah mengambil minuman kaleng di minimarket. Takdir pun mempertemukan mereka kembali.',
+            'producer' => 'Cha seoung-jae, Min-Sang kim',
+            'duration' => '2 hours 24 min',
+            'genre' => 'Romance/Drama/MeloDrama',
+            'type' => 'p',
+            'release' => 2019,
+        ]);
+        Film::create([
+            'banner' => 'always.jpg',
+            'video' => 'peelbound.mp4',
+            'trailer' => 'peelboundtrailer.mp4',
+            'name' => 'Always',
+            'synopsis' => 'Cheol-Min (So Ji-Sub), seorang pria dengan masa lalu yang gelap dan misterius, mengambil pekerjaan malam paruh waktu sebagai petugas parkir. Dia duduk di bilik pembayaran kecil di tempat parkir dan menatap televisi kecil. Seorang wanita bernama Jung-Hwa (Han Hyo-Joo) masuk ke stan. Dia menawarkan sesuatu kepada Cheol-Min dan duduk di sebelahnya. Cheol-Min menyadari wanita itu buta dan dia membingungkannya dengan petugas parkir yang bekerja sebelumnya.',
+            'producer' => 'Moon bomi, Kim jung-hee, Lee seong-hun',
+            'duration' => '1 hours 48 min',
+            'genre' => 'Romance/Drama',
+            'type' => 'p',
+            'release' => 2019,
+        ]);
+        Film::create([
+            'banner' => 'exit.jpg',
+            'video' => 'peelbound.mp4',
+            'trailer' => 'peelboundtrailer.mp4',
+            'name' => 'Exit',
+            'synopsis' => 'Action disaster dari produser THE BATTLESHIP ISLAND “EXIT” bercerita tentang Yong-nam (CHO Jung-seok) salah satu pemanjat tebing terbaik di perguruan tingginya namun tidak memiliki banyak keberuntungan di tempat lain setelah lulus. Setelah gagal mendapatkan pekerjaan selama bertahun-tahun dan harus bergantung pada orang tuanya hanya untuk bertahan hidup. Untuk membalas budi ibunya Yong-nam ingin merayakan ulang tahun ibunya yang ke-70 di Dream Garden karena wanita impiannya, Eui-ju (LIM Yoona, Girls Generation) bekerja di sana. Namun ketika bencana melanda Seoul, ia harus menggunakan keterampilan panjat tebingnya dengan bantuan Eui-ju untuk menyelamatkan semua orang.',
+            'producer' => 'Ryoo seung-wan, Baek hyeon-ik',
+            'duration' => '1 hours 44 min',
+            'genre' => 'Romance/Action/Comedy/Disaster',
+            'type' => 'p',
+            'release' => 2019,
+        ]);
+        Film::create([
+            'banner' => 'snow-is-on-the-sea.jpg',
+            'video' => 'peelbound.mp4',
+            'trailer' => 'peelboundtrailer.mp4',
+            'name' => 'Snow is on the sea',
+            'synopsis' => 'Wanita yang bernama Sun Mi (Lee Young-ah) yang merupakan wanita pembuat parfum yang menderita penyakit Myelodysplastic Syndrome sejak anak-anak. Sun Mi keluar masuk rumah sakit sejak kecil. Penyakit yang dialami Sun Mi adalah kelainan darah yang perlahan akan membuat pasien menderita leukemia.',
+            'producer' => 'Choi jung-rak',
+            'duration' => '1 hours 48 min',
+            'genre' => 'Romance/Melodrama',
+            'type' => 'p',
+            'release' => 2019,
+        ]);
+        Film::create([
+            'banner' => 'warewolf-boy.jpg',
+            'video' => 'peelbound.mp4',
+            'trailer' => 'peelboundtrailer.mp4',
+            'name' => 'Warewolf boy',
+            'synopsis' => 'Seorang wanita tua mengunjungi pondok desa tempat tinggalnya ketika masih kanak-kanak. Lima puluh tahun yang lalu, ia menemukan "anak lelaki serigala" yang bersembunyi di kegelapan. Perempuan itu mengajarinya menunggu makanannya dengan sabar, bagaimana berpakaian, berbicara, menulis dan kebiasaan manusia lainnya agar ia bisa hidup sebagai pria normal kelak. Anak lelaki itu jatuh cinta pada satu-satunya orang yang memberikan kasih sayang padanya. Namun ketika terdesak, insting hewannya keluar dan membuat penduduk desa ketakutan. Demi menyelamatkan anak lelaki yang mempertaruhkan nyawanya untuk berada di samping si perempuan, maka perempuan itu meninggalkannya dengan janji, "Tunggu aku. Aku akan kembali untukmu,".',
+            'producer' => 'InBeom Yoon, Kim su-jin',
+            'duration' => '2 hours 6 min',
+            'genre' => 'Romance/Melodrama/Fantasy/Drama',
+            'type' => 'p',
+            'release' => 2019,
+        ]);
+        Film::create([
+            'banner' => 'warewolf-boy.jpg',
+            'video' => 'peelbound.mp4',
+            'trailer' => 'peelboundtrailer.mp4',
+            'name' => 'Warewolf boy',
+            'synopsis' => 'Seorang wanita tua mengunjungi pondok desa tempat tinggalnya ketika masih kanak-kanak. Lima puluh tahun yang lalu, ia menemukan "anak lelaki serigala" yang bersembunyi di kegelapan. Perempuan itu mengajarinya menunggu makanannya dengan sabar, bagaimana berpakaian, berbicara, menulis dan kebiasaan manusia lainnya agar ia bisa hidup sebagai pria normal kelak. Anak lelaki itu jatuh cinta pada satu-satunya orang yang memberikan kasih sayang padanya. Namun ketika terdesak, insting hewannya keluar dan membuat penduduk desa ketakutan. Demi menyelamatkan anak lelaki yang mempertaruhkan nyawanya untuk berada di samping si perempuan, maka perempuan itu meninggalkannya dengan janji, "Tunggu aku. Aku akan kembali untukmu,".',
+            'producer' => 'InBeom Yoon, Kim su-jin',
+            'duration' => '2 hours 6 min',
+            'genre' => 'Romance/Melodrama/Fantasy/Drama',
+            'type' => 'p',
+            'release' => 2019,
+        ]);
+        Film::create([
+            'banner' => 'You_Who_Came_From_the_Stars_Cover.jpg',
+            'video' => 'peelbound.mp4',
+            'trailer' => 'peelboundtrailer.mp4',
+            'name' => 'You Who Came From The Stars',
+            'synopsis' => 'You Who Came From The Stars menceritakan sebuah kisah tentang alien yang mendarat di Bumi pada tahun 1609 selama Dinasti Joseon, Alien tersebut bernama Do Min-joon. Kehadirannya ke bumi ialah untuk mencoba membantu seorang gadis muda Yi Hwa yang melarikan diri karena dirinya merasa akan dibunuh,',
+            'producer' => 'Choi moon-suk,  Moon bo-mi',
+            'duration' => '2 hours',
+            'genre' => 'Romance/Melodrama/Comedy/Fantasy/Sci-fi',
+            'type' => 'p',
+            'release' => 2019,
         ]);
     }
 }

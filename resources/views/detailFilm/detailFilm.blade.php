@@ -130,9 +130,9 @@
                             @else
                                 <div class="tombol-film free">Tonton Film</div>
                             @endif
-                        @else{
+                        @else
                             <div class="tombol-film free">Tonton Film</div>
-                        }
+                        
                         @endif
                     </div>
                 </div>
@@ -145,22 +145,22 @@
         <h3 class="text-light mb-5">Rekomendasi Lain nya</h3>
         <div class="col-md-12 d-flex">
             <div class="col-md-2 px-2">
-                <img class="img-fluid" src="image/kungfuPanda.png" alt="">
+                <img class="img-fluid" src="/image/kungfuPanda.png" alt="">
             </div>
             <div class="col-md-2 px-2">
-                <img class="img-fluid" src="image/kungfuPanda.png" alt="">
+                <img class="img-fluid" src="/image/kungfuPanda.png" alt="">
             </div>
             <div class="col-md-2 px-2">
-                <img class="img-fluid" src="image/kungfuPanda.png" alt="">
+                <img class="img-fluid" src="/image/kungfuPanda.png" alt="">
             </div>
             <div class="col-md-2 px-2">
-                <img class="img-fluid" src="image/kungfuPanda.png" alt="">
+                <img class="img-fluid" src="/image/kungfuPanda.png" alt="">
             </div>
             <div class="col-md-2 px-2">
-                <img class="img-fluid" src="image/kungfuPanda.png" alt="">
+                <img class="img-fluid" src="/image/kungfuPanda.png" alt="">
             </div>
             <div class="col-md-2 px-2">
-                <img class="img-fluid" src="image/kungfuPanda.png" alt="">
+                <img class="img-fluid" src="/image/kungfuPanda.png" alt="">
             </div>
         </div>
     </section>

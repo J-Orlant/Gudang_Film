@@ -98,10 +98,10 @@
     <div class="dasar">
         <p class="text-light pl-3">Film Popular Keluarga</p>
         <div class="row banner m-0">
-            <div class="col-lg-5 p-0">
+            <div class="col-lg-5 col-sm-12 p-0">
                 <img src="image/banner_utama.png" alt="" class="img-fluid" style="width: 100%; height: 100%;">
             </div>
-            <div class="col-lg-7 p-0 sec-bg" style="background: #FFFFFF;">
+            <div class="col-lg-7 col-sm-12 p-0 sec-bg" style="background: #FFFFFF;">
                 <div class="owl-carousel">
                 @foreach($populars as $popular)
                 <?php 
@@ -183,13 +183,13 @@
         <p class="text-light text-center pt-5">Romance</p>
         <div class="col-md-12">
             <div class="owl-carousel-kedua">
-                @foreach($comedys as $comedy)
-                <a href="{{route('detail', $comedy->id)}}">
+                @foreach($romances as $romance)
+                <a href="{{route('detail', $romance->id)}}">
                     <div class="card kartu">
-                        <img class="card-img-top" src="image/zootopia.png" alt="">
+                        <img class="card-img-top" src="image/romance/{{ $romance->banner }}" alt="" style="height: 300px">
                         <div class="card-body pt-2 px-3">
-                            <p class="text-dark">{{$comedy->name}}</p>
-                            <p class="text-dark pb-2">{{$comedy->release}}</p>
+                            <p class="text-dark">{{$romance->name}}</p>
+                            <p class="text-dark pb-2">{{$romance->release}}</p>
                             <div class="d-flex">
                                 <i class="fas fa-star text-warning pr-2"></i>
                                 <i class="fas fa-star text-warning pr-2"></i>
@@ -207,13 +207,13 @@
         <p class="text-light text-center pt-5">Comedy</p>
         <div class="col-md-12">
             <div class="owl-carousel-kedua">
-                @foreach($romances as $romance)
-                <a href="{{route('detail', $romance->id)}}">
+                @foreach($comedys as $comedy)
+                <a href="{{route('detail', $comedy->id)}}">
                     <div class="card kartu">
-                        <img class="card-img-top" src="image/zootopia.png" alt="">
+                        <img class="card-img-top" src="image/comedy/{{ $comedy->banner }}" alt="" style="height: 300px">
                         <div class="card-body pt-2 px-3">
-                            <p class="text-dark">{{$romance->name}}</p>
-                            <p class="text-dark pb-2">{{$romance->release}}</p>
+                            <p class="text-dark">{{$comedy->name}}</p>
+                            <p class="text-dark pb-2">{{$comedy->release}}</p>
                             <div class="d-flex">
                                 <i class="fas fa-star text-warning pr-2"></i>
                                 <i class="fas fa-star text-warning pr-2"></i>
@@ -317,7 +317,7 @@
                 @foreach($horrors as $horror)
                 <a href="{{route('detail', $horror->id)}}">
                     <div class="card kartu">
-                        <img class="card-img-top" src="image/horror/{{$horror->banner}}" alt="">
+                        <img class="card-img-top" src="image/horror/{{ $horror->banner }}" alt="" style="height: 300px">
                         <div class="card-body pt-2 px-3">
                             <p class="text-dark">{{$horror->name}}</p>
                             <p class="text-dark pb-2">{{$horror->release}}</p>
@@ -368,7 +368,7 @@
 
 
     <!-- Bootstrap js -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
@@ -383,7 +383,7 @@
             responsiveClass: true,
             responsive: {
                 0: {
-                    items: 1,
+                    items: 2,
                     nav: true
                 },
                 600: {
@@ -403,11 +403,11 @@
             responsiveClass: true,
             responsive: {
                 0: {
-                    items: 1,
+                    items: 2,
                     nav: true
                 },
                 600: {
-                    items: 5,
+                    items: 3,
                     nav: false
                 },
                 1000: {

@@ -40,7 +40,7 @@
                     </div>
                 </li>
 
-                <li class="nav-item ml-5 aktif">
+                <li class="nav-item ml-4 aktif">
                     <a class="nav-link" href="#"><i class="fas fa-home text-light"></i> <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item mx-3">
@@ -72,7 +72,7 @@
                 </li>
             </ul>
             <div class="ml-auto">
-                <button href="" class="btn btn-warning text-light" id="pop-trigger"><i class="fas fa-gem"></i> Get Vip!</button>
+                <button href="" class="btn btn-warning text-light" id="pop-trigger"><i class="fas fa-gem"></i>Vip!</button>
                 <a class="btn nav-toogler tombol mx-3 p-2 vip" href="/profil">
                     <i class="fas fa-user"></i>
                 </a>

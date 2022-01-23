@@ -51,9 +51,15 @@
                 </li>
             </ul>
             <div class="d-inline ml-auto">
+                @if (Auth::user()->type == 'free')
                 <button class="btn btn-warning mr-1" id="pop-trigger">
-                    + VIP
+                    <i class="fas fa-gem"></i> VIP
                 </button>
+                @else
+                <button class="btn btn-primary mr-1" id="pop-trigger">
+                   <i class="fas fa-gem"></i> You Are VIP
+                </button>
+                @endif  <a class="btn nav-toogler tombol mx-3 p-2 vip" href="/profil">
                 <a href="{{ route('profil') }}" class="btn btn-secondary">
                     <i class="fas fa-user"></i>
                 </a>

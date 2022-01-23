@@ -52,20 +52,30 @@
     <div class="recommended container-fluid">
         <h5 class="title">Rekomendasi Lainnya</h5>
         <div class="row">
-            <div class="custom-card light">
-                <div class="thumbnail-card" style="background-image: url('/assets/image/ke.jpeg');">
-
-                </div>
-                <div class="custom-card-body">
-                    Kungfu Panda <br>
-                    2016
-                    <div class="d-flex">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-dark"></i>
-                    </div>
+            <div class="col-12 card-row">
+                <div class="owl-carousel-2">
+                    @foreach ($populars as $popular)
+                            <?php
+                                $satuan = strtolower($popular->genre);
+                                $genre = explode("/", $satuan);
+                            ?>
+                            <a href="{{ route('detail', $popular->id) }}" class="custom-card light d-block">
+                                <div class="thumbnail-card" style="background-image: url('/image/{{$genre[0]}}/{{ $popular->banner }}');">
+    
+                                </div>
+                                <div class="custom-card-body">
+                                    {{$popular->name}} <br>
+                                    {{$popular->release}}
+                                    <div class="d-flex">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-light"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        @endforeach
                 </div>
             </div>
         </div>
@@ -74,7 +84,35 @@
 
 
     @push('addon-js')
+    <script src="/plugin/owlcarousel/dist/owl.carousel.min.js"></script>
+
         <script>
+
+            $('.owl-carousel-2').owlCarousel({
+                loop: true,
+                margin: 50,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 2,
+                        nav: true
+                    },
+                    900: {
+                        items: 4,
+                        nav: false
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: false
+                    },
+                    1100: {
+                        items: 6,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            })
 
             $('.free').click(function () {
                 $(".banner").toggleClass("d-none");

@@ -16,3 +16,12 @@
     font-weight: map-get($map: $font-weights, $key: bold);
 
 }
+
+.btn-primary {
+    border-radius: 50px;
+    
+    color: #fff;
+    font-size: 15px;
+    font-weight: map-get($map: $font-weights, $key: bold);
+
+}

@@ -92,6 +92,13 @@
   font-weight: 700;
 }
 
+.btn-primary {
+  border-radius: 50px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
 .custom-card, .custom-card.dark, .custom-card.light {
   width: 158px;
   height: 310px;

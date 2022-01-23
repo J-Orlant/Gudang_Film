@@ -1,0 +1,133 @@
+.video-player {
+    width: 100%;
+    height: 650px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    font-family: 'Montserrat' sans-serif;
+
+    position: relative;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner {
+        position: absolute;
+        bottom: 0;
+
+        width: 88.8%;
+        height: 100%;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(4px);
+    }
+
+    .detail {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+
+        padding: 90px;
+
+        .img {
+            margin-right: 70px;
+
+            width: 200px;
+            height: 365px;
+            border-radius: 15px;
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .rincian {
+            width: 800px;
+            color: #fff;
+
+            .title {
+                margin-bottom: 20px;
+
+                font-size: 30px;
+                font-weight: map-get($map: $font-weights, $key: semibold);
+            }
+
+            .year {
+                margin-bottom: 10px;
+
+                font-size: 25px;
+                font-weight: map-get($map: $font-weights, $key: semibold);
+            }
+
+            .time-genre {
+                margin-bottom: 5px;
+
+                font-size: 18px;
+                font-weight: map-get($map: $font-weights, $key: semibold);
+            }
+
+            .rating-imdb {
+                margin-bottom: 12px;
+
+                i {
+                    margin-right: 8px;
+                }
+
+                .rating {
+                    font-size: 20px;
+                    font-weight: map-get($map: $font-weights, $key: semibold);  
+                }
+
+                .imdb {
+                    margin-left: 8px;
+                    background-color: #F1C21D;
+                    padding: 1px 7px;
+                    border-radius: 5px;
+
+                    color: black;
+                    font-size: 15px;
+                    font-weight: map-get($map: $font-weights, $key: semibold); 
+                }
+            }
+
+            .sipnopsis {
+                font-size: 15px;
+                font-weight: map-get($map: $font-weights, $key: semibold);
+                text-align: justify;
+            }
+
+            .btn {
+                font-family: 'Poppins' sans-serif;
+                font-size: 15px;
+                font-weight: map-get($map: $font-weights, $key: semibold);
+
+                padding: 9px 40px;
+                border-radius: 20px;
+                background-color: $purple;
+            }
+        }
+    }
+}
+
+.recommended {
+    background-color: $bg1;
+    padding: 31px 62px;
+
+    font-family: 'Montserrat' sans-serif;
+
+    h5 {
+        margin-bottom: 26px;
+
+        color: #fff;
+        font-size: 23px;
+        font-weight: map-get($map: $font-weights, $key: semibold);
+    }
+
+    .row {
+        padding: 0 50px;
+    }
+}

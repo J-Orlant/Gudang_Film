@@ -1,0 +1,18 @@
+.btn-secondary {
+    border-radius: 50px;
+
+    color: $bg1;
+    font-size: 15px;
+    font-weight: map-get($map: $font-weights, $key: bold);
+
+    background: #ffff;
+}
+
+.btn-warning {
+    border-radius: 50px;
+    
+    color: #fff;
+    font-size: 15px;
+    font-weight: map-get($map: $font-weights, $key: bold);
+
+}

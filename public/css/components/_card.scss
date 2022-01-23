@@ -1,0 +1,60 @@
+.custom-card {
+    width: 158px;
+    height: 310px;
+    border-radius: 15px;
+    border: none;
+
+    .thumbnail-card {
+        -webkit-start-start-border-radius: 15px;
+        -moz-start-start-border-radius: 15px;
+        border-start-start-radius: 15px;
+        -webkit-start-end-border-radius: 15px;
+        -moz-start-end-border-radius: 15px;
+        border-start-end-radius: 15px;
+
+        height: 230px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .custom-card-body {
+        display: inline-block;
+
+        margin: 13px 17px;
+
+        font-size: 12px;
+        font-weight: map-get($map: $font-weights, $key: semibold);
+        color: #ffff;
+        font-family: 'Montserrat' sans-serif;
+
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        .d-flex {
+            margin-top: 5px;
+            i {
+                margin-right: 3px;
+            }
+        }
+    }
+}
+
+.custom-card.dark {
+    @extend .custom-card;
+    background-color: $bg2;
+
+    margin-right: 43px;
+}
+
+.custom-card.light {
+    @extend .custom-card;
+    background-color: #fff;
+
+    margin-right: 43px;
+
+    .custom-card-body {
+        color: $bg2 ;
+    }
+}
+

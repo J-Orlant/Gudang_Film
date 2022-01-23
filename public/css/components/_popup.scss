@@ -1,0 +1,33 @@
+/* popup */
+
+.popUp {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .aa {
+        position: relative;
+    }
+
+    .bb {
+        top: 20%;
+        right: 26%;
+        position: absolute;
+
+        .cls {
+            width: 50px;
+            outline: none;
+            border: none;
+            background: transparent;
+            color: transparent;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

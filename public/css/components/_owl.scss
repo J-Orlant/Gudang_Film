@@ -1,0 +1,33 @@
+.owl-dots {
+    display: none;
+}
+
+.owl-nav {
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.owl-nav button {
+    width: 30px;
+    border: none;
+    outline: none;
+}
+
+.owl-nav button:focus {
+    border: none;
+    outline: none;
+}
+
+.owl-nav span {
+    font-size: 3em;
+}
+
+.owl-stage {
+    display: flex;
+    justify-content: center;
+}

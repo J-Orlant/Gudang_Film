@@ -1,0 +1,20 @@
+@import 'global/colors';
+@import 'global/fonts';
+
+@import 'components/nav';
+@import 'components/buttons';
+@import 'components/card';
+@import 'components/popup';
+@import 'components/owl';
+
+@import 'pages/home';
+@import 'pages/detail';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background: $bg2;
+}

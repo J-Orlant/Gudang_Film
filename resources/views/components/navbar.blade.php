@@ -1,7 +1,7 @@
  <!-- Navbar -->
  <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
             <img src="/image/logo.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -56,7 +56,7 @@
                     <i class="fas fa-gem"></i> VIP
                 </button>
                 @else
-                <button class="btn btn-primary mr-1" id="pop-trigger">
+                <button class="btn btn-primary mr-1">
                    <i class="fas fa-gem"></i> You Are VIP
                 </button>
                 @endif  <a class="btn nav-toogler tombol mx-3 p-2 vip" href="/profil">

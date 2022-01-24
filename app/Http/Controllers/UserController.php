@@ -28,7 +28,11 @@ class UserController extends Controller
         $genre = Film::where('genre', 'LIKE',  $film->genre.'%')->first();
         $genre = Str::lower($genre->genre);
         $satuan = explode("/", $genre);
-        $populars = Film::where('type', 'p')->limit(6)->get();
+        $count  = Film::paginate(3);
+            $populars = Film::where('type', 'p')->limit(6)->get();
+        // for ($i=1; $i <= 6 ; $i++) {
+        // };
+        // dd($count);
         return view('detailFilm.detailFilm', compact('film', 'satuan', 'user', 'populars'));
     }
 

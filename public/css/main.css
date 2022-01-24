@@ -407,6 +407,12 @@
   padding: 0 50px;
 }
 
+.recommended .row .owl-nav button {
+  display: none;
+  border: none;
+  outline: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
